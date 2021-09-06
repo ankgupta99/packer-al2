@@ -1,8 +1,8 @@
 
 {
    "variables": {
-      "aws_access_key": "xxxx",
-      "aws_secret_key": "xxx",
+      "aws_access_key": "AKIA4SC6FTHHEBMNWPVK",
+      "aws_secret_key": "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",
       "source_ami_ssh_user" : "ec2-user"
   },
     "builders": [
@@ -11,7 +11,7 @@
         "access_key": "{{user `aws_access_key`}}",
         "secret_key": "{{user `aws_secret_key`}}",
         "region": "us-east-1",
-        "ami_name": "packer-ami-maf",
+        "ami_name": "packer-ami-maf-json",
         "iam_instance_profile" : "packer-role-test",
         "instance_type": "t2.micro",
         "source_ami":"ami-0c2b8ca1dad447f8a",
