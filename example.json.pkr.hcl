@@ -17,12 +17,12 @@
 # https://www.packer.io/docs/templates/hcl_templates/variables#type-constraints for more info.
 variable "aws_access_key" {
   type    = string
-  default = ${{secrets.AWS_ACCESS_KEY}}
+  default = env("AWS_ACCESS_KEY")
 }
 
 variable "aws_secret_key" {
   type    = string
-  default = ${{secrets.AWS_SECRET_KEY}}
+  default = env("AWS_SECRET_KEY")
 }
 
 variable "source_ami_ssh_user" {
