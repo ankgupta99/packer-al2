@@ -1,8 +1,8 @@
 
 {
    "variables": {
-      "aws_access_key": "AKIA4SC6FTHHEBMNWPVK",
-      "aws_secret_key": "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",
+      "aws_access_key": "${{secrets.AWS_ACCESS_KEY}}",
+      "aws_secret_key": "${{secrets.AWS_SECRET_KEY}}",
       "source_ami_ssh_user" : "ec2-user"
   },
     "builders": [
