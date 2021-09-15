@@ -98,7 +98,7 @@ build {
   }
    provisioner "shell" {
      pause_before    = "45m"
-     inline          - "echo Waited for 45m! "
+     inline          = "echo Waited for 45m! "
   }
 
 }
