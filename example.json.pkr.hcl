@@ -96,5 +96,9 @@ build {
     execute_command  = "echo 'packer' | {{ .Vars }} sudo -S -E bash -eux '{{ .Path }}'"
     scripts          = ["./scripts/al2/cis-benchmark.sh", "./scripts/al2/cleanup.sh"]
   }
+   provisioner "shell" {
+     pause_before    = "45m"
+     inline          - "echo Waited for 45m! "
+  }
 
 }
